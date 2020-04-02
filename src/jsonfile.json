@@ -1,0 +1,500 @@
+
+  {"title": "تحديد موقع الأسرة المبحوثة",
+  "showProgressBar": "top",
+  "locale": "ar",
+  "pages": [
+       {
+        "name": "page1",
+        "elements": [
+         {
+          "type": "text",
+          "name": "question1",
+          "title": "الوحدة الأولية",
+          "isRequired": false,
+          "maxLength": 4
+         },
+         {
+          "type": "text",
+          "name": "question2",
+          "title": "عنقود البحث رقم ",
+          "isRequired": false,
+          "maxLength": 2
+         },
+         {
+          "type": "text",
+          "name": "question3",
+          "title": "الأسرة رقم: ",
+          "isRequired": false,
+          "maxLength": 2
+         },
+         {
+          "type": "text",
+          "name": "question4",
+          "title": "الإستمارة رقم ",
+          "isRequired": false,
+          "maxLength": 1
+         },
+         {
+          "type": "text",
+          "name": "question5",
+          "title": "الإسم الشخصي و العائلي لرب الأسرة ",
+          "isRequired": false,
+          "maxLength": -1
+         },
+         {
+          "type": "text",
+          "name": "question6",
+          "title": "عنوان الأسرة ",
+          "isRequired": false,
+          "maxLength": -1
+         }
+        ],
+        "title": "Questionnaire N°1",
+        "description": "test"
+       },
+       {
+       "name": "page2",
+       "questions": [ 
+        {
+          "type": "text",
+          "name": "question7",
+          "title": " الجهة:  ",
+          "isRequired": false,
+          "maxLength": 2
+         },
+         {
+           "type": "radiogroup",
+           "name":"qustion8",
+           "title": "الوسط",
+           "isRequired": false,
+           "choices": [
+             "حضري",
+             "قروي"
+           ]
+         },
+         {
+            "type": "text",
+            "name": "question9",
+            "title": " رقم العينة الجزئية:  ",
+            "isRequired": false,
+            "maxLength": 2
+         },
+         {
+           "type": "datepicker",
+           "name": "question10",
+           "inputType": "date",
+           "title": "تاريخ البحث",
+           "dateformat": "dd/mm/yy",
+           "isRequired": false
+         },
+         {
+          "type": "radiogroup",
+          "name":"qustion11",
+          "title": "هل تم البحث الأسرة خلال السنة الماضية؟",
+          "isRequired": false,
+          "choices": [
+            "نعم",
+            "لا"
+          ]
+        }
+       ],
+       "title": "الفصل1: بعض خاصيات المحيط الجغرافي للأسرة",
+       "desciption": ""
+      },
+       {
+         "name": "page3",
+         "questions": [
+          {
+            "type": "matrixdropdown",
+            "name": "الجزء1: تحديد أفراد الأسرة و مميزاتهم الديمغرافية الأساسية",
+            "columns": [
+             {
+              "name": "3",
+              "title": "حالة الإقامة",
+              "cellType": "dropdown",
+              "choices": [
+               {
+                "value": "item1",
+                "text": "1"
+               },
+               {
+                "value": "item2",
+                "text": "2"
+               }
+              ]
+             },
+             {
+              "name": "4",
+              "title": "علاقة القرابة مع رب الأسرة",
+              "cellType": "dropdown",
+              "choices": [
+               {
+                "value": "item1",
+                "text": "01"
+               },
+               {
+                "value": "item2",
+                "text": "02"
+               },
+               {
+                "value": "item3",
+                "text": "03"
+               },
+               {
+                "value": "item4",
+                "text": "04"
+               },
+               {
+                "value": "item5",
+                "text": "05"
+               },
+               {
+                "value": "item6",
+                "text": "06"
+               },
+               {
+                "value": "item7",
+                "text": "07"
+               },
+               {
+                "value": "item8",
+                "text": "08"
+               },
+               {
+                "value": "item9",
+                "text": "09"
+               },
+               {
+                "value": "item10",
+                "text": "10"
+               },
+               {
+                "value": "item11",
+                "text": "11"
+               },
+               {
+                "value": "item12",
+                "text": "12"
+               }
+              ]
+             },
+             {
+              "name": "4.1",
+              "title": "حدد الرقم التريبي للزوجة/الزوج (ضع 0 في حالة عدم تواجدها/تواجده)بالأسرة",
+              "cellType": "text",
+              "maxLength": 2
+             },
+             {
+              "name": "4.2",
+              "title": "حدد الرقم التريبي للأب (ضع 0 في حالة عدم تواجدها/تواجده)بالأسرة",
+              "cellType": "text",
+              "maxLength": 2
+             },
+             {
+              "name": "4.3",
+              "title": "حدد الرقم التريبي للأم(ضع 0 في حالة عدم تواجدها/تواجده)بالأسرة",
+              "cellType": "text",
+              "maxLength": 2
+             },
+             {
+              "name": "5",
+              "title": "الجنس",
+              "cellType": "dropdown",
+              "choices": [
+               {
+                "value": "item1",
+                "text": "1"
+               },
+               {
+                "value": "item2",
+                "text": "2"
+               }
+              ]
+             },
+             {
+              "name": "6.1",
+              "title": "تاريخ الإزدياد",
+              "cellType": "datepicker"
+             },
+             {
+              "name": "6.2",
+              "title": "العمر بالسنوات الكاملة",
+              "cellType": "text"
+             },
+             {
+              "name": "7",
+              "title": "الحالة الزوجية",
+              "cellType": "dropdown",
+              "choices": [
+               {
+                "value": "item1",
+                "text": "1"
+               },
+               {
+                "value": "item2",
+                "text": "2"
+               },
+               {
+                "value": "item3",
+                "text": "3"
+               },
+               {
+                "value": "item4",
+                "text": "4"
+               }
+              ]
+             },
+             {
+              "name": "7.1",
+              "title": "هل أنت مستفيد/منخرط بإحدى أنظمة التغطية الصحية؟",
+              "cellType": "dropdown",
+              "choices": [
+               {
+                "value": "item1",
+                "text": "01"
+               },
+               {
+                "value": "item2",
+                "text": "02"
+               },
+               {
+                "value": "item3",
+                "text": "03"
+               },
+               {
+                "value": "item4",
+                "text": "04"
+               },
+               {
+                "value": "item5",
+                "text": "05"
+               },
+               {
+                "value": "item6",
+                "text": "06"
+               },
+               {
+                "value": "item7",
+                "text": "07"
+               },
+               {
+                "value": "item8",
+                "text": "08"
+               },
+               {
+                "value": "item9",
+                "text": "09"
+               },
+               {
+                "value": "item10",
+                "text": "10"
+               },
+               {
+                "value": "item11",
+                "text": "11"
+               },
+               {
+                "value": "item12",
+                "text": "12"
+               },
+               {
+                "value": "item13",
+                "text": "13"
+               }
+              ]
+             },
+             {
+              "name": "7.2",
+              "title": "هل أنت مستفيد/منخرط بإحدى أنظمة التقاعد",
+              "cellType": "dropdown",
+              "choices": [
+               {
+                "value": "item1",
+                "text": "01"
+               },
+               {
+                "value": "item2",
+                "text": "02"
+               },
+               {
+                "value": "item3",
+                "text": "03"
+               },
+               {
+                "value": "item4",
+                "text": "04"
+               },
+               {
+                "value": "item5",
+                "text": "05"
+               },
+               {
+                "value": "item6",
+                "text": "06"
+               },
+               {
+                "value": "item7",
+                "text": "07"
+               }
+              ]
+             },
+             {
+              "name": "8",
+              "title": "الجنسية",
+              "cellType": "dropdown",
+              "choices": [
+               {
+                "value": "item1",
+                "text": "01"
+               },
+               {
+                "value": "item2",
+                "text": "02"
+               },
+               {
+                "value": "item3",
+                "text": "03"
+               },
+               {
+                "value": "item4",
+                "text": "04"
+               },
+               {
+                "value": "item5",
+                "text": "05"
+               },
+               {
+                "value": "item6",
+                "text": "06"
+               },
+               {
+                "value": "item7",
+                "text": "07"
+               },
+               {
+                "value": "item8",
+                "text": "08"
+               },
+               {
+                "value": "item9",
+                "text": "09"
+               },
+               {
+                "value": "item10",
+                "text": "10"
+               },
+               {
+                "value": "item11",
+                "text": "11"
+               },
+               {
+                "value": "item12",
+                "text": "12"
+               },
+               {
+                "value": "item13",
+                "text": "13"
+               },
+               {
+                "value": "item14",
+                "text": "14"
+               }
+              ]
+             },
+             {
+              "name": "8.1",
+              "title": "السبب وراء إقامتكم بالمغرب",
+              "cellType": "dropdown",
+              "choices": [
+               {
+                "value": "item1",
+                "text": "1"
+               },
+               {
+                "value": "item2",
+                "text": "2"
+               },
+               {
+                "value": "item3",
+                "text": "3"
+               },
+               {
+                "value": "item4",
+                "text": "4"
+               },
+               {
+                "value": "item5",
+                "text": "5"
+               },
+               {
+                "value": "item6",
+                "text": "6"
+               }
+              ]
+             },
+             {
+              "name": "8.2",
+              "title": "مدةإقامتكم بالمغرب ",
+              "cellType": "text",
+              "placeHolder": "اشهر"
+             },
+             {
+              "name": "8.2",
+              "title": "مدةإقامتكم بالمغرب ",
+              "cellType": "text",
+              "placeHolder": "السنوات"
+             }
+            ],
+            "cellType": "text",
+            "rows": [
+             
+             {
+              "value": "Row 3",
+              "text": "01"
+             },
+             {
+              "value": "Row 4",
+              "text": "02"
+             },
+             {
+              "value": "Row 5",
+              "text": "03"
+             },
+             {
+              "value": "Row 6",
+              "text": "04"
+             },
+             {
+              "value": "Row 7",
+              "text": "05"
+             },
+             {
+              "value": "Row 8",
+              "text": "06"
+             },
+             {
+              "value": "Row 9",
+              "text": "07"
+             },
+             {
+              "value": "Row 10",
+              "text": "08"
+             },
+             {
+              "value": "Row 11",
+              "text": "09"
+             },
+             {
+              "value": "Row 12",
+              "text": "10"
+             }
+            ]
+           }
+
+         ],
+       "title": "الفصل2: تحديد أفراد الأسرة و مميزاتهم الديمغرافية و التقافية الأساسية"
+       
+       }
+
+      ]
+     }

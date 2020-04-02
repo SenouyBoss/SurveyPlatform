@@ -1,0 +1,119 @@
+{   "title": "تحديد موقع الأسرة المبحوثة",
+    "showProgressBar": "top",
+    "locale": "ar",
+        "pages": [
+            {
+                "name": "page1",
+                "title": "الفصل3: تحديد نوع النشاط",
+                "elements": [
+                    {
+                        "type": "matrixdynamic",
+                        "minRowCount": 1,
+                        "rowCount": 1,
+                        "name": "member_names",
+                        "valueName": "members",
+                        "isRequired": true,
+                        "title": "المرجو إدخال الإسم",
+                        "addRowText": "أضف فرد اخر",
+                        "columns": [
+                            {
+                                "name": "name",
+                                "isRequired": true,
+                                "title": "اسم الفرد",
+                                "cellType": "text"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "name": "page2",
+                "title": "تحديد نوع النشاط",
+                "elements": [
+                    {
+                        "type": "paneldynamic",
+                        "renderMode": "list",
+                        "allowAddPanel": false,
+                        "allowRemovePanel": false,
+                        "name": "arrray_member_info",
+                        "title": "أفراد",
+                        "valueName": "members",
+                        "templateTitle": "Member name: {panel.name}",
+                        "templateElements": [
+                            {
+                                "type": "panel",
+                                "name": "panel_member_age",
+                                "valueName": "age",
+                                "title": "العمر",
+                                "elements": [
+                                    {
+                                        "name": "age",
+                                        "type": "text",
+                                        "title": "ما هو عمرك",
+                                        "validators": [
+                                            {
+                                                "type": "numeric",
+                                                "minValue": 7,
+                                                "maxValue": 150
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }, {
+                                "type": "panel",
+                                "name": "panel_member_education",
+                                "title": "طبيعة الإرتباط بالعمل?",
+                                "elements": [
+                                    {
+                                        "type": "radiogroup",
+                                        "choices": [
+                                            "ليس هناك إرتباط", "مستأجر", "يعمل لحسابه الخاص", "حالة أخرى"
+                                        ],
+                                        "name": "work relation",
+                                        "title": "طبيعة الإرتباط بالعمل?",
+                                        "valueName": "raltion"
+                                    }
+                                ]
+                            }, {
+                                "type": "panel",
+                                "name": "panel_employer_hours_work",
+                                "title": "مدة الإنقطاع عن العمل بالأسابيع",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "inputType": "number",
+                                        "name": "member_hours_worked",
+                                        "valueName": "hours_worked",
+                                        "title": "أسابيع"
+                                    }, {
+                                        "type": "dropdown",
+                                        "name": "member_hours_worked_frequency",
+                                        "title": "هل تنوي الرجوع إلى هذا العمل",
+                                        "valueName": "hours_worked_frequency",
+                                        "startWithNewLine": false,
+                                        "defaultValue": " نعم بالتأكيد",
+                                        "choices": [" نعم بالتأكيد", "لا", "نعم من الممكن"]
+                                    }
+                                ]
+                            }, {
+                                "type": "panel",
+                                "name": "panel_age_check",
+                                "title": "عمر المبحوث عنه",
+                                "elements": [
+                                    {
+                                        "type": "dropdown",
+                                        "name": "employer_income_frequency",
+                                        "title": "هل عمر المبحوث يقل عن 15 سنة",
+                                        "valueName": "income_frequency",
+                                        "startWithNewLine": false,
+                                        "defaultValue": "نعم",
+                                        "choices": ["نعم", "لا"]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "showQuestionNumbers": "off"
+        }
